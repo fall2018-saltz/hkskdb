@@ -33,6 +33,7 @@ hist(sample3)
 #replicating sample of 20, 2000 times to view the histogram and descriptive statistics
 sample4<-replicate(2000,sample(dfStates$population,size=20,replace=TRUE))
 printVecInfo(sample4)
+
 hist(sample4)
 sample4<-replicate(2000,sample(dfStates$population,size=20,replace=TRUE))
 printVecInfo(sample4)
