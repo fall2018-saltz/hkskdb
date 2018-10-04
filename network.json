@@ -30,12 +30,15 @@
             "name": "census.csv"
         },
         {
-            "name": "clean.R"
+            "name": "data.csv"
         },
         {
-            "name": "data.csv"
+            "assigned_to": "not assigned",
+            "desc": "creaning the census data",
+            "name": "clean.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-10-04 15:28:18",
+    "updated_at": "2018-10-04 15:29:06",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
