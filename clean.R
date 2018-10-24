@@ -3,4 +3,4 @@ raw_data
 cnames<-colnames(raw_data)
 cnames
 cnames[1]<-"srin"
-cnames[2]
+cnames[c(1,2)]
