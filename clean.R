@@ -12,3 +12,4 @@ rename=colnames(dfstates)
 rename
 colnames(rename)=c("statename","population","popover18","percentover18")
 dfstates=-raw_data
+dfstates
