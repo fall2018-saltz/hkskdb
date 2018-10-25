@@ -10,4 +10,4 @@ dfstates=dfstates[,5:8]
 dfstates
 rename=colnames(dfstates)
 rename
-rename$name="stateName"
+colnames(rename)=c("statename","population","popover18","percentover18")
