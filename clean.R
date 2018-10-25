@@ -8,4 +8,5 @@ rename
 cleandata=function(dataframe){
     
     df=df[1:5,5:7]
+    name=colnames(df)
 }
