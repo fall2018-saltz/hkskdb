@@ -7,3 +7,4 @@ dfstates
 dfstates=dfstates[1:51,]
 dfstates
 dfstates=dfstates[,5:8]
+dfstates
