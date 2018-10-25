@@ -8,3 +8,4 @@ rename
 colnames(raw_data)=rename
 raw_data
 which.max(raw_data$yfgdyu)
+raw_data[53,]
