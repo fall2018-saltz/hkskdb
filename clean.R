@@ -11,7 +11,8 @@ dfstates
 rename=colnames(dfstates)
 rename
 dfstates=raw_data
-dfstates
+ dfStates =  dfstates
+
 #2.	Use View( ), head( ), and tail( ) to examine the data frame. 
 View(dfStates)
 head(dfStates)
