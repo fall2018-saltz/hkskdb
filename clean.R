@@ -6,3 +6,4 @@ rename[1]=("statename")
 rename[c(2,3,4)]=c("gdg","vgdjh","yfgdyu")
 rename
 colnames(raw_data)=rename
+raw_data
