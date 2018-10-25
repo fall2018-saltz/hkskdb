@@ -15,3 +15,4 @@ cleandata=function(dataframe){
     
 }
 raw_data
+dfstates=cleandata(raw_data)
