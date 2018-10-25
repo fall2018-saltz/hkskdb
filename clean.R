@@ -10,3 +10,4 @@ raw_data
 which.max(raw_data$yfgdyu)
 raw_data[53,]
 popsort=raw_data[order(raw_data$yfgdyu),]
+popsort
