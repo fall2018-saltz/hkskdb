@@ -14,3 +14,4 @@ cleandata=function(dataframe){
     return(df)
     
 }
+raw_data
