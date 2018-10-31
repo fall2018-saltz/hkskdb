@@ -4,6 +4,7 @@ library("ggmap")
 cleannew1 <- USArrests
 
 
+
 # save row names as a separate variable
 stateName <- as.vector(rownames(USArrests))
 stateName <- tolower(stateName)
