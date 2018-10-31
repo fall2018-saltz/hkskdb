@@ -2,6 +2,7 @@
 library("ggplot2")
 library("ggmap")
 cleannew1 <- USArrests
+cleannew1
 
 
 
