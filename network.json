@@ -49,10 +49,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "spachika",
             "desc": "",
-            "name": "script2435.R"
+            "name": "script2435.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "csvfile4210.csv"
         }
     ],
-    "updated_at": "2018-10-31 06:00:00",
+    "updated_at": "2018-10-31 06:03:58",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
