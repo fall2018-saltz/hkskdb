@@ -1,4 +1,5 @@
 
+#1)	Read in the census dataset and the USArrests and merge them 
 # cleaning data
 newfun<- function(states){
 
@@ -32,19 +33,18 @@ dataset2 <- USArrests
 stateName<- as.vector(rownames(USArrests))
 
 # adding statename column to the data frame
-cleandata1 <- cbind(dataset2,stateName, stringsAsFactors=FALSE)
 
-# merge the dataframes based on the stateName column in both the dataframes
-# the merge function combines dataframes based on common columns
-# here it merges the dataframes by the common column stateName
+dataset2 <- cbind(dataset2,stateName, stringsAsFactors=FALSE)
 
-mergeddata <- merge(data_cleaned,cleandata1,by="stateName")
+# now merge two data frames
 
-#clean_data_merged
+mergeddata <- merge(dataset1,dataset2,by="stateName")
+
+#clean mergeddata
 statecenterx <- state.center$x
 statecentery <- state.center$y
-clean_data_merged <- cbind(clean_data_merged,state.area)
-clean_data_merged <- cbind(clean_data_merged,statecenterx)
-clean_data_merged <- cbind(clean_data_merged,statecentery)
+mergeddata <- cbind(mergeddata,state.area)
+mergeddata <- cbind(mergeddata,statecenterx)
+mergeddata <- cbind(mergeddata,statecentery)
 
-str(clean_data_merged)
+str(mergeddata)
