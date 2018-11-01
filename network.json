@@ -24,14 +24,8 @@
             "desc": "creaning the census data",
             "name": "clean.R",
             "task_status": "in progress"
-        },
-        {
-            "assigned_to": "spachika",
-            "desc": "",
-            "name": "script4826.R",
-            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 04:59:01",
+    "updated_at": "2018-11-01 04:59:05",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
