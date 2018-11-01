@@ -9,8 +9,7 @@ newfun<- function(states){
   dfSt <- dfSt[c(-1,-10,-53),] 
 
   # renaming the remaining columns
-  # the colnames function is used to rename columns and the rownames function is used for rows
-
+  #using colnames function we are renaming columns 
   colnames(dfStates)[c(1,2,3,4)] <- c("stateName", "population", "popOver18", "percentOver18")
 
   #returns the clean dataframe
