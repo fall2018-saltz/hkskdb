@@ -41,6 +41,7 @@ dataset2 <- cbind(dataset2,stateName, stringsAsFactors=FALSE)
 mergeddata <- merge(dataset1,dataset2,by="stateName")
 
 #clean mergeddata
+#2)	Add the area of each state, and the center of each state, to the merged dataframe, using the ‘state.center’, ‘state.center’ and ‘state.name’ vectors
 statecenterx <- state.center$x
 statecentery <- state.center$y
 mergeddata <- cbind(mergeddata,state.area)
