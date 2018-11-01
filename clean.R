@@ -10,17 +10,18 @@ newfun<- function(states){
 
   # renaming the remaining columns
   #using colnames function we are renaming columns 
-  colnames(dfStates)[c(1,2,3,4)] <- c("stateName", "population", "popOver18", "percentOver18")
+  # we are using row names function to rename rows
+  colnames(dfSt)[c(1,2,3,4)] <- c("stateName", "population", "popOver18", "percentOver18")
 
   #returns the clean dataframe
-  return(dfStates)
+  return(dfSt)
 }
 
-clean_data <- func1(raw_data)
+data_cleaned <- newfun(raw_data)
 
-# saves the state names as row names
-rownames(clean_data) <- clean_data$stateName
+
+rownames(data_cleaned ) <- data_cleaned $stateName
 
 # convert state names to lowercase
 
-clean_data$stateName <- tolower(clean_data$stateName)
+data_cleaned $stateName <- tolower(data_cleaned $stateName)
