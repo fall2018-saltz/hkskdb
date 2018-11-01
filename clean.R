@@ -17,32 +17,28 @@ newfun<- function(states){
   return(dfSt)
 }
 
-data_cleaned <- newfun(raw_data)
+dataset1 <- newfun(raw_data)
 
 
-rownames(data_cleaned ) <- data_cleaned $stateName
+rownames(dataset1 ) <- dataset1 $stateName
 
-# convert state names to lowercase
-
-data_cleaned $stateName <- tolower(data_cleaned $stateName)
-
-
+# reading second data set of USArrest
 library("ggplot2")
 library("ggmap")
-cleandata1 <- USArrests
+dataset2 <- USArrests
 
 
 # save row names as a separate variable
 stateName<- as.vector(rownames(USArrests))
-stateName <- tolower(stateName)
-# add this column to the dataframe as a column names stateName
-cleandata1 <- cbind(cleandata1,stateName, stringsAsFactors=FALSE)
+
+# adding statename column to the data frame
+cleandata1 <- cbind(dataset2,stateName, stringsAsFactors=FALSE)
 
 # merge the dataframes based on the stateName column in both the dataframes
 # the merge function combines dataframes based on common columns
 # here it merges the dataframes by the common column stateName
 
-clean_data_merged <- merge(data_cleaned,cleandata1,by="stateName")
+mergeddata <- merge(data_cleaned,cleandata1,by="stateName")
 
 #clean_data_merged
 statecenterx <- state.center$x
