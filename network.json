@@ -13,6 +13,16 @@
             ],
             "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mergeddata",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "csvfile889.csv"
         }
     ],
     "nodes": [
@@ -29,6 +39,6 @@
             "name": "csvfile889.csv"
         }
     ],
-    "updated_at": "2018-11-01 06:02:22",
+    "updated_at": "2018-11-01 06:02:33",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
