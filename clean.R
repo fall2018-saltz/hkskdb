@@ -2,7 +2,7 @@
 # cleaning data
 newfun<- function(states){
 
-  # removes the first row and the last row, with state = USA and state = Puerto rico commonwealth 
+  # removes the first row and the last row
   # and the first four columns SUMLEV	REGION	DIVISION	STATE
 
   dfSt <- states[,c(-1,-2,-3,-4)]
