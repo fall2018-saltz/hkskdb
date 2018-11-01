@@ -17,16 +17,6 @@
         {
             "ports": [
                 {
-                    "output": "clean",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "clean",
                     "type": "csv"
                 }
@@ -53,6 +43,16 @@
             ],
             "source": "csvfile4210.csv",
             "target": "script4826.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data_cleaned",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "data.csv"
         }
     ],
     "nodes": [
@@ -84,6 +84,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-31 06:08:37",
+    "updated_at": "2018-11-01 04:36:01",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
