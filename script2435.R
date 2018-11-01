@@ -7,7 +7,7 @@ clean <- USArrests
 sta_name <- as.vector(rownames(USArrests))
 
 
-stateName <- tolower(stateName)
+sta_name  <- tolower(sta_name )
 # add this column to the dataframe as a column names stateName
 cleandata2 <- cbind(cleandata2,stateName, stringsAsFactors=FALSE)
 
