@@ -29,20 +29,20 @@ data_cleaned $stateName <- tolower(data_cleaned $stateName)
 
 library("ggplot2")
 library("ggmap")
-cleandata2 <- USArrests
+cleandata1 <- USArrests
 
 
 # save row names as a separate variable
 stateName <- as.vector(rownames(USArrests))
 stateName <- tolower(stateName)
 # add this column to the dataframe as a column names stateName
-cleandata2 <- cbind(cleandata2,stateName, stringsAsFactors=FALSE)
+cleandata1 <- cbind(cleandata1,stateName, stringsAsFactors=FALSE)
 
 # merge the dataframes based on the stateName column in both the dataframes
 # the merge function combines dataframes based on common columns
 # here it merges the dataframes by the common column stateName
 
-clean_data_merged <- merge(data_cleaned,cleandata2,by="stateName")
+clean_data_merged <- merge(data_cleaned,cleandata1,by="stateName")
 
 #clean_data_merged
 statecenterx <- state.center$x
