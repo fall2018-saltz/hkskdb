@@ -42,7 +42,7 @@ cleandata1 <- cbind(cleandata1,sta_nam, stringsAsFactors=FALSE)
 # the merge function combines dataframes based on common columns
 # here it merges the dataframes by the common column stateName
 
-clean_data_merged <- merge(data_cleaned,cleandata1,by="stateName")
+clean_data_merged <- merge(data_cleaned,cleandata1,by="sta_nam")
 
 #clean_data_merged
 statecenterx <- state.center$x
