@@ -33,6 +33,16 @@
             ],
             "source": "csvfile889.csv",
             "target": "script7294.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "map2",
+                    "type": "png"
+                }
+            ],
+            "source": "script7294.R",
+            "target": "plot1.png"
         }
     ],
     "nodes": [
@@ -58,6 +68,6 @@
             "name": "plot1.png"
         }
     ],
-    "updated_at": "2018-11-01 06:09:37",
+    "updated_at": "2018-11-01 06:09:52",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
