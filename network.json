@@ -17,16 +17,6 @@
         {
             "ports": [
                 {
-                    "input": "clean",
-                    "type": "csv"
-                }
-            ],
-            "source": "data.csv",
-            "target": "script2435.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "mergeData",
                     "type": "csv"
                 }
@@ -43,24 +33,11 @@
             ],
             "source": "csvfile4210.csv",
             "target": "script4826.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "data_cleaned",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
         }
     ],
     "nodes": [
         {
             "name": "scprc_est_2017_18_pop_res.csv"
-        },
-        {
-            "name": "data.csv"
         },
         {
             "assigned_to": "spachika",
@@ -84,6 +61,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-01 04:36:01",
+    "updated_at": "2018-11-01 04:58:48",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
