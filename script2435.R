@@ -1,11 +1,12 @@
 
 library("ggplot2")
 library("ggmap")
-cleandata2 <- USArrests
+clean <- USArrests
 
 
-# save row names as a separate variable
-stateName <- as.vector(rownames(USArrests))
+sta_name <- as.vector(rownames(USArrests))
+
+
 stateName <- tolower(stateName)
 # add this column to the dataframe as a column names stateName
 cleandata2 <- cbind(cleandata2,stateName, stringsAsFactors=FALSE)
