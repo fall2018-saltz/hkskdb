@@ -9,7 +9,7 @@ sta_name <- as.vector(rownames(USArrests))
 
 sta_name  <- tolower(sta_name )
 # add this column to the dataframe as a column names stateName
-clean <- cbind(clean,stateName, stringsAsFactors=FALSE)
+clean <- cbind(clean,sta_name, stringsAsFactors=FALSE)
 
 # merge the dataframes based on the stateName column in both the dataframes
 # the merge function combines dataframes based on common columns
