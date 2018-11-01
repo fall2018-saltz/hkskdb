@@ -49,10 +49,15 @@
             "name": "csvfile889.csv"
         },
         {
+            "assigned_to": "spachika",
             "desc": "",
-            "name": "script7294.R"
+            "name": "script7294.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "plot1.png"
         }
     ],
-    "updated_at": "2018-11-01 06:03:01",
+    "updated_at": "2018-11-01 06:09:37",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
