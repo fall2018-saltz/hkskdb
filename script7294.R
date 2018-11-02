@@ -10,6 +10,7 @@ stateName <- tolower(stateName)
 arrests=cbind(arrests,stateName,stringsAsFactors=FALSE)
 
 #meging both data1 and data2 dataframes
+
 mergedData=merge(cleandata,arrests,by="stateName")
 mergedData
 
