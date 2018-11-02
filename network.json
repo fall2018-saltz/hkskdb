@@ -53,6 +53,16 @@
             ],
             "source": "csvfile6334.csv",
             "target": "script4922.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "colourmap",
+                    "type": "png"
+                }
+            ],
+            "source": "script4922.R",
+            "target": "colourmap.png"
         }
     ],
     "nodes": [
@@ -96,6 +106,6 @@
             "name": "plot4.png"
         }
     ],
-    "updated_at": "2018-11-02 00:16:43",
+    "updated_at": "2018-11-02 00:17:04",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
