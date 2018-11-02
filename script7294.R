@@ -11,7 +11,7 @@ arrests=cbind(arrests,stateName,stringsAsFactors=FALSE)
 
 #meging both data1 and data2 dataframes
 
-mergedData=merge(cleandata,arrests,by="stateName")
+mergedData=merge(data1,data2,by="stateName")
 mergedData
 
 #2)	Add the area of each state, and the center of each state, to the mergeddataframe,
