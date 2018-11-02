@@ -1,12 +1,26 @@
 
-#Step B: Generate a color coded map
-#3)	Create a color coded map, based on the area of the state 
+#take the USArrests data set into arrests variable 
+arrests=USArrests
 
-library("ggplot2")
-library("ggmap")
-us <- map_data("state")
-options(scipen=999)
-map2 <- ggplot(mergeddata, aes(map_id = stateName))
-map2 <- map2 + geom_map(map = us,aes(fill=Murder))+ scale_fill_gradient(low = "black", high = "red")             
-map2 <- map2 + expand_limits(x = us$long, y = us$lat) + coord_map()
-map2
+stateName=as.vector(rownames(arrests))
+stateName=tolower(stateName)
+
+arrests=cbind(arrests,stateName,stringsAsFactors=FALSE)
+
+#arrests doesn't contain a proper column name for state names but has state names as index
+#so create a column to store the state names suing rownames
+
+
+#now that we have to merge two dataframes using a common element 
+#the column element is stateName
+mergedData=merge(cleandata,arrests,by="stateName")
+mergedData
+
+#2)	Add the area of each state, and the center of each state, to the mergeddataframe,
+#using the ‘state.center’, ‘state.center’ and ‘state.name’ vectors
+
+stCenterX <- state.center$x
+stCenterY <- state.center$y
+mergedData <- cbind(mergedData,state.area)
+mergedData <- cbind(mergedData,stCenterX)
+mergedData <- cbind(mergedData,stCenterY)
