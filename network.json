@@ -17,16 +17,6 @@
         {
             "ports": [
                 {
-                    "output": "map2",
-                    "type": "png"
-                }
-            ],
-            "source": "script7294.R",
-            "target": "plot1.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "cleandata",
                     "type": "csv"
                 }
@@ -63,11 +53,8 @@
             "desc": "",
             "name": "script7294.R",
             "task_status": "in progress"
-        },
-        {
-            "name": "plot1.png"
         }
     ],
-    "updated_at": "2018-11-02 00:11:24",
+    "updated_at": "2018-11-02 00:12:50",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
