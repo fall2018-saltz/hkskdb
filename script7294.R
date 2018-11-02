@@ -7,7 +7,7 @@ stateName <- as.vector(rownames(arrests))
 
 stateName <- tolower(stateName)
 
-arrests=cbind(arrests,stateName,stringsAsFactors=FALSE)
+arrests=cbind(data2,stateName,stringsAsFactors=FALSE)
 
 #meging both data1 and data2 dataframes
 
