@@ -1,6 +1,6 @@
 
-#take the USArrests data set into arrests variable 
-arrests=USArrests
+#copying usarests into variable called data2
+data2<-USArrests
 
 stateName=as.vector(rownames(arrests))
 stateName=tolower(stateName)
