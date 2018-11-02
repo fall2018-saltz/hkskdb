@@ -1,47 +1,34 @@
 
-#1)	Read in the census dataset and the USArrests and merge them 
-# cleaning data
-newfun<- function(states){
- dfSt <- states[,c(-1,-2,-3,-4)]
- dfSt <- dfSt[c(-1,-10,-53),] 
+# to create a function to read the data
+cenFun=function(raw_data)
+{
+#pass the csv data into the dfStates variable
+dfStates=raw_data
 
-  # renaming the remaining columns
-  #using colnames function we are renaming columns 
-  # we are using row names function to rename rows
-  colnames(dfSt)[c(1,2,3,4)] <- c("stateName", "population", "popOver18", "percentOver18")
+#remove row 53 to remove the last row using the minus symbol
+dfStates=dfStates[-53,]
+#to make only 51 rows available we need to remove one more row and according to the question,
+#remove the 1st row as it is not a state and according to the condition we should have the rows as one per state and the district of Columbia
+dfStates=dfStates[-1,]
+
+#there should be only 4 columns now
+#hence, remove the columns other than the required ones
+dfStates=dfStates[,-c(1,2,3,4)]
+
+#now we need to change the names of the columns
+
+#first view the original names of the columns
+colnames(dfStates)
+
+#to change the names to new names asked in the question
+colnames(dfStates)=c("stateName","population","popOver18","percentOver18")
 
 
-  return(dfSt)
+return(dfStates)
 }
 
-dataset1 <- newfun(raw_data)
+cleandata=cenFun(raw_data)
 
-
-rownames(dataset1 ) <- dataset1 $stateName
-
-# reading second data set of USArrest
-library("ggplot2")
-library("ggmap")
-dataset2 <- USArrests
-
-
-# save row names as a separate variable
-stateName<- as.vector(rownames(USArrests))
-
-# adding statename column to the data frame
-
-dataset2 <- cbind(dataset2,stateName, stringsAsFactors=FALSE)
-
-# now merge two data frames
-
-mergeddata <- merge(dataset1,dataset2,by="stateName")
-
-#clean mergeddata
-#2)	Add the area of each state, and the center of each state, to the merged dataframe, using the ‘state.center’, ‘state.center’ and ‘state.name’ vectors
-statecenterx <- state.center$x
-statecentery <- state.center$y
-mergeddata <- cbind(mergeddata,state.area)
-mergeddata <- cbind(mergeddata,statecenterx)
-mergeddata <- cbind(mergeddata,statecentery)
-
-str(mergeddata)
+rownames(cleandata)=cleandata$stateName
+cleandata$stateName=tolower(cleandata$stateName)
+cleandata
