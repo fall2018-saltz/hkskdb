@@ -3,7 +3,7 @@
 data2<-USArrests
 
 
-stateName <- as.vector(rownames(arrests))
+stateName <- as.vector(rownames(data2))
 
 stateName <- tolower(stateName)
 
