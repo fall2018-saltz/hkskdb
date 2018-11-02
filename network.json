@@ -17,16 +17,6 @@
         {
             "ports": [
                 {
-                    "input": "cleandata",
-                    "type": "csv"
-                }
-            ],
-            "source": "csvfile889.csv",
-            "target": "script7294.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "mergedData",
                     "type": "csv"
                 }
@@ -73,6 +63,16 @@
             ],
             "source": "clean.R",
             "target": "csvfile889.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data1",
+                    "type": "csv"
+                }
+            ],
+            "source": "csvfile889.csv",
+            "target": "script7294.R"
         }
     ],
     "nodes": [
@@ -110,6 +110,6 @@
             "name": "plot4.png"
         }
     ],
-    "updated_at": "2018-11-02 02:18:08",
+    "updated_at": "2018-11-02 02:18:16",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
