@@ -17,26 +17,6 @@
         {
             "ports": [
                 {
-                    "output": "colorMap",
-                    "type": "png"
-                }
-            ],
-            "source": "script4922.R",
-            "target": "plot3.png"
-        },
-        {
-            "ports": [
-                {
-                    "output": "colorMap2",
-                    "type": "png"
-                }
-            ],
-            "source": "script4922.R",
-            "target": "plot4.png"
-        },
-        {
-            "ports": [
-                {
                     "output": "data1",
                     "type": "csv"
                 }
@@ -75,18 +55,12 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "spachika",
-            "desc": "",
-            "name": "script4922.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "plot3.png"
         },
         {
             "name": "plot4.png"
         }
     ],
-    "updated_at": "2018-11-02 02:35:01",
+    "updated_at": "2018-11-02 02:35:08",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
