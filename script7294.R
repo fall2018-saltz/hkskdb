@@ -12,7 +12,7 @@ arrests <- cbind(data2,stateName,stringsAsFactors=FALSE)
 
 #meging both data1 and data2 dataframes
 
-mergedData=merge(data1,data2,by="stateName")
+mergedData <- rbind(data1,data2)
 mergedData
 
 #2)	Add the area of each state, and the center of each state, to the merged dataframe,
