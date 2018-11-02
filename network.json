@@ -35,7 +35,12 @@
             "target": "script7294.R"
         },
         {
-            "ports": [],
+            "ports": [
+                {
+                    "output": "mergedData",
+                    "type": "csv"
+                }
+            ],
             "source": "script7294.R",
             "target": "csvfile6334.csv"
         }
@@ -63,6 +68,6 @@
             "name": "csvfile6334.csv"
         }
     ],
-    "updated_at": "2018-11-02 00:13:09",
+    "updated_at": "2018-11-02 00:13:37",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
