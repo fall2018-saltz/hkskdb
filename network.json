@@ -63,6 +63,16 @@
             ],
             "source": "script4922.R",
             "target": "plot3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "colorMap2",
+                    "type": "png"
+                }
+            ],
+            "source": "script4922.R",
+            "target": "plot4.png"
         }
     ],
     "nodes": [
@@ -100,6 +110,6 @@
             "name": "plot4.png"
         }
     ],
-    "updated_at": "2018-11-02 00:53:37",
+    "updated_at": "2018-11-02 00:54:25",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
