@@ -88,8 +88,11 @@
         },
         {
             "name": "plot2.png"
+        },
+        {
+            "name": "plot3.png"
         }
     ],
-    "updated_at": "2018-11-02 00:16:30",
+    "updated_at": "2018-11-02 00:16:36",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
