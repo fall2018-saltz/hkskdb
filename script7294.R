@@ -6,6 +6,7 @@ data2<-USArrests
 stateName <- as.vector(rownames(data2))
 
 stateName <- tolower(stateName)
+data2
 
 arrests <- cbind(data2,stateName,stringsAsFactors=FALSE)
 
