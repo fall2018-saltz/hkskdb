@@ -17,26 +17,6 @@
         {
             "ports": [
                 {
-                    "output": "mergedData",
-                    "type": "csv"
-                }
-            ],
-            "source": "script7294.R",
-            "target": "csvfile6334.csv"
-        },
-        {
-            "ports": [
-                {
-                    "input": "mergedData",
-                    "type": "csv"
-                }
-            ],
-            "source": "csvfile6334.csv",
-            "target": "script4922.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "colorMap",
                     "type": "png"
                 }
@@ -95,9 +75,6 @@
             "task_status": "in progress"
         },
         {
-            "name": "csvfile6334.csv"
-        },
-        {
             "assigned_to": "spachika",
             "desc": "",
             "name": "script4922.R",
@@ -110,6 +87,6 @@
             "name": "plot4.png"
         }
     ],
-    "updated_at": "2018-11-02 02:18:16",
+    "updated_at": "2018-11-02 02:35:01",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
