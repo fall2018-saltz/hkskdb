@@ -4,15 +4,21 @@
 #‘state.center’ and ‘state.name’ vectors
 
 CenterX <- state.center$x
+
 CenterY <- state.center$y
+
 mergeDF <- cbind(mergeDF,state.area)
+
 mergeDF <- cbind(mergeDF,CenterX)
+
 mergeDF<- cbind(mergeDF,CenterY)
+ 
+ 
  #Step B: Generate a color coded map
+
 #3)	Create a color codedmap, based on the area of the state 
 
-#for ggplot visualisation we need the ggplot2 package
-#gor geom_map we need the ggmap package
+# installing "ggplot " and "ggmap" libraries for ggplot and geom_map
 
 library("ggplot2")
 library("ggmap")
