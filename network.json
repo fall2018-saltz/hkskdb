@@ -11,34 +11,131 @@
                     "type": "csv"
                 }
             ],
-            "source": "census.csv",
+            "source": "scprc_est_2017_18_pop_res.csv",
             "target": "clean.R"
         },
         {
             "ports": [
                 {
-                    "output": "clean_data",
+                    "output": "data1",
                     "type": "csv"
                 }
             ],
             "source": "clean.R",
-            "target": "data.csv"
+            "target": "csvfile889.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data1",
+                    "type": "csv"
+                }
+            ],
+            "source": "csvfile889.csv",
+            "target": "script5286.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mergeDF",
+                    "type": "csv"
+                }
+            ],
+            "source": "script5286.R",
+            "target": "csvfile8206.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "mergeDF",
+                    "type": "csv"
+                }
+            ],
+            "source": "csvfile8206.csv",
+            "target": "script7124.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Map1",
+                    "type": "png"
+                }
+            ],
+            "source": "script7124.R",
+            "target": "Map1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Map2",
+                    "type": "png"
+                }
+            ],
+            "source": "script7124.R",
+            "target": "Map2.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Map3",
+                    "type": "png"
+                }
+            ],
+            "source": "script7124.R",
+            "target": "Map3.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Map4",
+                    "type": "png"
+                }
+            ],
+            "source": "script7124.R",
+            "target": "Map4.png"
         }
     ],
     "nodes": [
         {
-            "name": "census.csv"
+            "name": "scprc_est_2017_18_pop_res.csv"
         },
         {
-            "name": "data.csv"
-        },
-        {
-            "assigned_to": "not assigned",
+            "assigned_to": "spachika",
             "desc": "creaning the census data",
             "name": "clean.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "name": "csvfile889.csv"
+        },
+        {
+            "assigned_to": "spachika",
+            "desc": "",
+            "name": "script5286.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "csvfile8206.csv"
+        },
+        {
+            "assigned_to": "spachika",
+            "desc": "",
+            "name": "script7124.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Map1.png"
+        },
+        {
+            "name": "Map2.png"
+        },
+        {
+            "name": "Map3.png"
+        },
+        {
+            "name": "Map4.png"
         }
     ],
-    "updated_at": "2018-10-04 15:29:06",
+    "updated_at": "2018-11-07 03:46:06",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
