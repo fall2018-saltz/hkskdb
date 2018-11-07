@@ -20,20 +20,24 @@ mergeDF<- cbind(mergeDF,CenterY)
 
 # installing "ggplot " and "ggmap" libraries for ggplot and geom_map
 
+
 library("ggplot2")
+
 library("ggmap")
+
 usa <- map_data("state")
 
-#for ggplot add aesthetics
+
+#defining  aesthetics for ggplot
 Map1<- ggplot(mergeDF, aes(map_id = stateName))
 
-#geom_map for map 
+#geom_map  
 Map1 <- Map1 + geom_map(map = usa ,aes(fill= state.area))
 
-#add limits as coordinates for the map
+#adding map limits
 Map1 <- Map1 + expand_limits(x = usa$long, y = usa$lat) + coord_map()
 
-#add title for the map
+# adding map title
 Map1 <- Map1 + ggtitle("USA Color Map1")
 Map1
 
