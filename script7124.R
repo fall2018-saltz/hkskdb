@@ -15,7 +15,7 @@ mergeDF<- cbind(mergeDF,CenterY)
 
 library("ggplot2")
 library("ggmap")
-us=map_data("state")
+usa <- map_data("state")
 
 #for ggplot add aesthetics
 colorMap=ggplot(mergedData, aes(map_id = stateName))
