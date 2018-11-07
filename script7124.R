@@ -38,7 +38,7 @@ Map1 <- Map1 + geom_map(map = usa ,aes(fill= state.area))
 Map1 <- Map1 + expand_limits(x = usa$long, y = usa$lat) + coord_map()
 
 # adding map title
-Map1 <- Map1 + ggtitle("USA Color Map1")
+Map1 <- Map1 + ggtitle("USA  Map1")
 
 Map1
 
