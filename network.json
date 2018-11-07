@@ -85,8 +85,11 @@
         },
         {
             "name": "Map1.png"
+        },
+        {
+            "name": "Map2.png"
         }
     ],
-    "updated_at": "2018-11-07 03:43:55",
+    "updated_at": "2018-11-07 03:44:03",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
