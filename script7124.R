@@ -71,7 +71,7 @@ x2 <- latitude$lon+10
 y2 <- latitude$lat+10
 
 #plot the map for the above data
-4 <- ggplot(mergedData, aes(map_id=stateName))
+Map4 <- ggplot(mergedData, aes(map_id=stateName))
 #based on murder rate
 Map4 <- Map4 + geom_map(map=usa,aes(fill=Murder))+ scale_fill_gradient(low = "yellow", high = "blue") + xlim(c(x1,x2)) + ylim(c(y1,y2))        
 colorMap4=colorMap4+ expand_limits(x=us$long, y = us$lat) + coord_map()
