@@ -40,7 +40,7 @@ Map2 <-  ggplot(mergeDF, aes(map_id = stateName))
 #here the map is based on murder rate instead of the state area 
 #as in above case
 Map2 <- Map2+ geom_map(map = usa,aes(fill=Murder))+ scale_fill_gradient(low = "yellow", high = "blue")             
-Map2 <- NcolorMap2+expand_limits(x = us$long, y = us$lat) + coord_map()
+Map2 <- Map2+expand_limits(x = usa$long, y = usa$lat) + coord_map()
 Map2<- colorMap2+ggtitle("Murder Rate")
 Map2
 
