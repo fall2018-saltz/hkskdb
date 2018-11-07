@@ -1,2 +1,3 @@
 
 USArrests
+arres <- USArrests
