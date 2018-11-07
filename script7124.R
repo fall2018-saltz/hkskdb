@@ -41,7 +41,7 @@ Map2 <-  ggplot(mergeDF, aes(map_id = stateName))
 #as in above case
 Map2 <- Map2+ geom_map(map = usa,aes(fill=Murder))+ scale_fill_gradient(low = "yellow", high = "blue")             
 Map2 <- Map2+expand_limits(x = usa$long, y = usa$lat) + coord_map()
-Map2<- colorMap2+ggtitle("Murder Rate")
+Map2<- Map2+ggtitle("MAP OF MURDER RATE")
 Map2
 
 #5)	 Show the population as a circle per state
