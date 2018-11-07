@@ -23,16 +23,6 @@
             ],
             "source": "clean.R",
             "target": "csvfile889.csv"
-        },
-        {
-            "ports": [
-                {
-                    "input": "data1",
-                    "type": "csv"
-                }
-            ],
-            "source": "csvfile889.csv",
-            "target": "script7294.R"
         }
     ],
     "nodes": [
@@ -47,14 +37,8 @@
         },
         {
             "name": "csvfile889.csv"
-        },
-        {
-            "assigned_to": "spachika",
-            "desc": "",
-            "name": "script7294.R",
-            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-02 02:35:16",
+    "updated_at": "2018-11-07 02:49:15",
     "url": "https://github.com/fall2018-saltz/hkskdb"
 }
