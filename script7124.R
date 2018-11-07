@@ -18,7 +18,7 @@ library("ggmap")
 usa <- map_data("state")
 
 #for ggplot add aesthetics
-colorMap=ggplot(mergedData, aes(map_id = stateName))
+Map1<- ggplot(mergeDF, aes(map_id = stateName))
 
 #geom_map for map 
 colorMap=colorMap+ geom_map(map = us ,aes(fill= state.area))
