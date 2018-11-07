@@ -1,7 +1,7 @@
 
 USArrests
 arrest <- USArrests
-View(arrests)
+View(arrest)
 
 states <- states[ , -1:-4]    # Removing first 4 columns
 colnames(states) <- c("stateName", "population", "popOver18", "percentOver18") # Changing column names
