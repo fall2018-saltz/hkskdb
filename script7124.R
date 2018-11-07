@@ -77,4 +77,4 @@ Map4 <- Map4 + geom_map(map=usa,aes(fill=Murder))+ scale_fill_gradient(low = "ye
 Map4 <- Map4+ expand_limits(x=usa$long, y = usa$lat) + coord_map()
 Map4 <- Map4+ geom_point(mergeDF, mapping = aes(x = CenterX, y = CenterY, size=population))
 Map4 <- Map4+ggtitle("Map of North East Map")
-colorMap4
+Map4
