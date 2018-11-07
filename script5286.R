@@ -14,4 +14,4 @@ arrests <- cbind(arrests,stateName,stringsAsFactors=FALSE)
 #now that we have to merge two dataframes using a common element 
 #the column element is stateName
 mergeDF=merge(data1 ,arrests,by="stateName")
-mergedDF
+mergeDF
