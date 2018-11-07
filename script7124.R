@@ -3,7 +3,8 @@
 #using the ‘state.center’, ‘state.center’ and ‘state.name’ vectors
 
 CenterX <- state.center$x
-CenterY <- state.center$y <- cbind(mergedData,state.area)
+CenterY <- state.center$y
+<- cbind(mergedData,state.area)
 mergedData <- cbind(mergedData,stCenterX)
 mergedData <- cbind(mergedData,stCenterY)
  #Step B: Generate a color coded map
