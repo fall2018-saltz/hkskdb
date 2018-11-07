@@ -4,9 +4,9 @@
 
 CenterX <- state.center$x
 CenterY <- state.center$y
-<- cbind(mergedData,state.area)
-mergedData <- cbind(mergedData,stCenterX)
-mergedData <- cbind(mergedData,stCenterY)
+mergeDF <- cbind(mergeDF,state.area)
+mergeDF <- cbind(mergeDF,CenterX)
+mergeDF<- cbind(mergeDF,CenterY)
  #Step B: Generate a color coded map
 #3)	Create a color codedmap, based on the area of the state 
 
