@@ -35,7 +35,7 @@ Map1
 
 #4)	Repeat step B, but color code the map based on the murder rate of each state.
 
-Map2= ggplot(mergeDF, aes(map_id = stateName))
+Map2 <-  ggplot(mergeDF, aes(map_id = stateName))
 
 #here the map is based on murder rate instead of the state area 
 #as in above case
