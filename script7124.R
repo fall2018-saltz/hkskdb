@@ -78,7 +78,7 @@ Map3 <- Map3+ggtitle("Map Of Murder population ")
 
 Map3
 
-#Step D: Zoom the map
+
 
 #6)	Repeat step C, but only show the states in the north east
 
@@ -86,17 +86,28 @@ Map3
 latitude <- geocode("new york city, ny",source="dsk")
 
 #set the latitude and longitude
+
 y1 <- latitude$lat-10
+
 x1 <- latitude$lon-10
+
 x2 <- latitude$lon+10
+
 y2 <- latitude$lat+10
 
-#plot the map for the above data
+
+
+
 Map4 <- ggplot(mergeDF, aes(map_id=stateName))
 
 #based on murder rate
+
 Map4 <- Map4 + geom_map(map=usa,aes(fill=Murder))+ scale_fill_gradient(low = "yellow", high = "blue") + xlim(c(x1,x2)) + ylim(c(y1,y2))        
+
 Map4 <- Map4+ expand_limits(x=usa$long, y = usa$lat) + coord_map()
+
 Map4 <- Map4+ geom_point(mergeDF, mapping = aes(x = CenterX, y = CenterY, size=population))
+
 Map4 <- Map4+ggtitle("Map of North East Map")
+
 Map4
