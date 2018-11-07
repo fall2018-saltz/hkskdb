@@ -7,12 +7,10 @@ stateName <- tolower(stateName)
 
 arrests <- cbind(arrests,stateName,stringsAsFactors=FALSE)
 
-#arrests doesn't contain a proper column name for state names but has state names as index
-#so create a column to store the state names suing rownames
 
 
-#now that we have to merge two dataframes using a common element 
-#the column element is stateName
+# creating  a column to store state names and meging two data frames "data1" and "arrests"
+
 mergeDF=merge(data1 ,arrests,by="stateName")
 mergeDF
 
