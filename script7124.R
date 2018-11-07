@@ -49,7 +49,7 @@ Map2
 #using the location defined by the center of each state
 
 Map3 <- ggplot(mergeDF, aes(map_id = stateName))
-Map3 <- Map3+geom_map(map = usa,aes(fill=Murder))+ scale_fill_gradient(low = "green", high = "red")             
+Map3 <- Map3+geom_map(map = usa,aes(fill=Murder))+ scale_fill_gradient(low = "yellow", high = "blue")             
 Map3 <- Map3+expand_limits(x = us$long, y = us$lat) + coord_map()
 
 #for larger the population, larger is the circle
