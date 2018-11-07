@@ -24,7 +24,7 @@ Map1<- ggplot(mergeDF, aes(map_id = stateName))
 Map1 <- Map1 + geom_map(map = usa ,aes(fill= state.area))
 
 #add limits as coordinates for the map
-colorMap=colorMap+expand_limits(x = us$long, y = us$lat) + coord_map()
+Map1 <- Map1 + expand_limits(x = usa$long, y = usa$lat) + coord_map()
 
 #add title for the map
 colorMap=colorMap+ggtitle("US Color Map")
