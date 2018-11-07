@@ -75,6 +75,6 @@ Map4 <- ggplot(mergeDF, aes(map_id=stateName))
 #based on murder rate
 Map4 <- Map4 + geom_map(map=usa,aes(fill=Murder))+ scale_fill_gradient(low = "yellow", high = "blue") + xlim(c(x1,x2)) + ylim(c(y1,y2))        
 Map4 <- Map4+ expand_limits(x=usa$long, y = usa$lat) + coord_map()
-colorMap4=colorMap4+ geom_point(data=mergedData, mapping = aes(x = stCenterX, y = stCenterY, size=population))
+Map4 <- Map4+ geom_point(mergeDF, mapping = aes(x = CenterX, y = CenterY, size=population))
 colorMap4=colorMap4+ggtitle("North East Map")
 colorMap4
