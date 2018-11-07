@@ -28,7 +28,7 @@ Map1 <- Map1 + expand_limits(x = usa$long, y = usa$lat) + coord_map()
 
 #add title for the map
 Map1 <- Map1 + ggtitle("USA Color Map1")
-colorMap
+Map1
 
 
 #Step C: Create a color shadedmap of the U.S. based on the Murder rate for each state
