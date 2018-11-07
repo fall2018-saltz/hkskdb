@@ -62,7 +62,7 @@ Map3
 #6)	Repeat step C, but only show the states in the north east
 
 #use the coordinates of NewYork city
-lats=geocode("new york city, ny",source="dsk")
+latitude <- geocode("new york city, ny",source="dsk")
 
 #set the latitude and longitude
 y1=lats$lat-10
