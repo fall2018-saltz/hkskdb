@@ -1,6 +1,6 @@
 
 USArrests
-arrests <- USArrests
+arrest <- USArrests
 View(arrests)
 
 states <- states[ , -1:-4]    # Removing first 4 columns
