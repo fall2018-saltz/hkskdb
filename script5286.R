@@ -15,3 +15,4 @@ arrests <- cbind(arrests,stateName,stringsAsFactors=FALSE)
 #the column element is stateName
 mergeDF=merge(data1 ,arrests,by="stateName")
 mergeDF
+
