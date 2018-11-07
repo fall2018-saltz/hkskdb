@@ -65,10 +65,10 @@ Map3
 latitude <- geocode("new york city, ny",source="dsk")
 
 #set the latitude and longitude
-y1=lats$lat-10
-x1=lats$lon-10
-x2=lats$lon+10
-y2=lats$lat+10
+y1 <- latitude$lat-10
+x1 <- latitude$lon-10
+x2 <- latitude$lon+10
+y2 <- latitude$lat+10
 
 #plot the map for the above data
 colorMap4=ggplot(mergedData, aes(map_id=stateName))
